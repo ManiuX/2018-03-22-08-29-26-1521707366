@@ -4,6 +4,7 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.List;
 import java.util.Random;
+import java.util.ArrayList;
 
 public class InverseReduce {
 
@@ -16,6 +17,13 @@ public class InverseReduce {
     }
 
     public List<Integer> divideToSmaller(int number) {
-        throw new NotImplementedException();
+        List<Integer> result = new ArrayList<>();
+        int num = random.nextInt(3);
+        while (number - num >= 0) {
+            number = number - num;
+            result.add(number);
+        }
+
+        return result;
     }
 }

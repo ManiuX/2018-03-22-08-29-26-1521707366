@@ -70,8 +70,8 @@ public class CollectionOperatorTest {
     @Test
     public void should_pop_common_elements() {
         //弹出两个集合的交集
-        int[] firstArray = new int[]{1, 2, 4, 6, 10};
-        int[] secondArray = new int[]{3, 2, 6, 10, 8};
+        Integer[] firstArray = new Integer[]{1, 2, 4, 6, 10};
+        Integer[] secondArray = new Integer[]{3, 2, 6, 10, 8};
 
         Integer[] result = new Integer[]{2, 6, 10};
         List<Integer> resultList = Arrays.asList(result);
